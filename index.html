@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Docker build debugger</title>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel=stylesheet href="node_modules/codemirror/lib/codemirror.css">
+    <link type="text/css" rel=stylesheet href="node_modules/codemirror/theme/dracula.css">
+    <link type="text/css" rel=stylesheet href="src/css/style.css">
+    <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="node_modules/xterm/css/xterm.css" />
+  </head>
+  <body>
+    <textarea id="editor">FROM alpine:latest
+RUN touch aFile && touch otherFile
+RUN touch alsoThisFile</textarea>
+    <div class="container">
+        <div class="divider"></div>
+
+        <div class="section">
+            <div class="row buttons">
+                <a id="debug" class="waves-effect waves-light btn col s2">Debug it!
+                </a>
+                <div id="loader" class="preloader-wrapper small active s1 hide">
+                    <div class="spinner-layer spinner-green-only">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="gap-patch">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <a id="play" class="waves-effect waves-light btn col s1 push-s9 disabled">
+                    <i class="material-icons">play_arrow</i>
+                </a>
+            </div>
+            <div class="row">
+                <div id="terminal-component" class="row"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <script type="text/javascript" src="src/js/app.js"></script>
+  </body>
+</html>

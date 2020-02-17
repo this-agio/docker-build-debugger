@@ -1,0 +1,30 @@
+
+body {
+    background-color: #282a36;
+}
+
+.CodeMirror {
+    height: 40%;
+}
+
+.container {
+    height: 50%;
+}
+
+.breakpoint {
+    background-color: red;
+}
+
+/*
+#terminal .xterm,
+#terminal .xterm-viewport,
+#terminal .xterm-viewport,
+#terminal .xterm-screen,
+#terminal canvas{
+    height: 80% !important;
+}*/
+
+/*#terminal canvas,
+#terminal .xterm-screen {
+    width: 100% !important;
+}*/
