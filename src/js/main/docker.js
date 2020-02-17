@@ -16,7 +16,7 @@ module.exports = {
         aShell.send('docker run -ti ' + image + ' ' + config.step_command + '\r')
 
         return aShell
-    }
+    },
     imageId: function() {
     }
 }

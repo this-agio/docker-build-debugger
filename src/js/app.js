@@ -16,7 +16,7 @@ const docker = require('./src/js/main/docker')
 
 const piping = require('./src/js/shared/piping')
 
-var breakpoint = require('./src/js/shared/breakpoint')
+var breakpoint = new require('./src/js/shared/breakpoint')
 var newStepper = require('./src/js/shared/stepper').create
 var config = require('./src/js/shared/config')
 

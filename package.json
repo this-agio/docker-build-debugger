@@ -4,6 +4,8 @@
   "description": "An editor to debug the building of docker images",
   "main": "index.js",
   "scripts": {
+    "init": "npx electron-build",
+    "run": "npx electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -27,6 +29,7 @@
   },
   "devDependencies": {
     "electron": "^8.0.0",
-    "electron-builder": "^22.3.2"
+    "electron-builder": "^22.3.2",
+    "jasmine": "^3.5.0"
   }
 }

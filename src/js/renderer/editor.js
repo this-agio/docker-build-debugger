@@ -44,7 +44,7 @@ module.exports = {
             },
             contentUntil: function(index) {
                 cm.getValue().split('\n').slice(0, index).join('\n')
-            }
+            },
             toggleFreeze: function() {
                 freezed = !freezed
                 cm.setOption("readOnly", !freezed ? false : "nocursor")
