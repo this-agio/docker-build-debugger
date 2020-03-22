@@ -1,5 +1,5 @@
 
-module.exports =  function() {
+module.exports = function() {
     var breakpoints = []
 
     this.toggleBreakpointOn = function(line) {

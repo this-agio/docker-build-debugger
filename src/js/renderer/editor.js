@@ -8,9 +8,11 @@ require('codemirror/mode/javascript/javascript')
 require('codemirror/addon/mode/simple')
 require('codemirror/mode/dockerfile/dockerfile')
 
-breakpoint = require('../shared/breakpoint')
+const Breakpoint = require('../shared/breakpoint')
 
 const $ = require('jquery')
+
+var breakpoint = new Breakpoint()
 
 function toggleBreakpointOn(element) {
     if(element.hasClass('breakpoint')) {
